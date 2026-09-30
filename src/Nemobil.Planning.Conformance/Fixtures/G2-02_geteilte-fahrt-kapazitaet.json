@@ -1,0 +1,294 @@
+{
+  "id": "G2-02",
+  "name": "geteilte-fahrt-kapazitaet",
+  "group": "G2",
+  "description": "Mitnahme erlaubt; Fahrzeug 1 hat im Anfragezeitraum drei von vier Plaetzen belegt, zwei weitere werden angefragt. Jeder Vorschlag muss die Kapazitaet zu jedem Zeitpunkt einhalten.",
+  "expectation": "Any",
+  "request": {
+    "start": {
+      "lat": 50.017986,
+      "lon": 10.013991
+    },
+    "target": {
+      "lat": 50.044966,
+      "lon": 10.041973
+    },
+    "pickup": {
+      "min": "2030-01-07T08:00:00Z",
+      "max": "2030-01-07T08:20:00Z",
+      "toleranceBefore": 0,
+      "toleranceAfter": 0,
+      "toleranceIsSet": false
+    },
+    "dropoff": {
+      "min": "2030-01-07T08:00:00Z",
+      "max": "2030-01-07T09:30:00Z",
+      "toleranceBefore": 0,
+      "toleranceAfter": 0,
+      "toleranceIsSet": false
+    },
+    "demand": {
+      "adults": 2,
+      "children": 0,
+      "luggage": 0
+    },
+    "allowCarpooling": true,
+    "toleratedDelayBefore": "00:00:00",
+    "toleratedDelayAfter": "00:05:00",
+    "requiredSkills": [],
+    "schedule": {
+      "min": "2030-01-07T06:00:00Z",
+      "max": "2030-01-07T22:00:00Z",
+      "toleranceBefore": 0,
+      "toleranceAfter": 0,
+      "toleranceIsSet": false
+    },
+    "maxProposals": 3,
+    "maxSearchRadiusMeters": 30000,
+    "analyzeMode": false,
+    "correlationId": "g2-02"
+  },
+  "vehicles": [
+    {
+      "vehicleId": "veh-1",
+      "tourId": "tour-1",
+      "shift": {
+        "min": "2030-01-07T06:00:00Z",
+        "max": "2030-01-07T22:00:00Z",
+        "toleranceBefore": 0,
+        "toleranceAfter": 0,
+        "toleranceIsSet": false
+      },
+      "capacity": {
+        "ADULTS": 4,
+        "CHILDS": 2,
+        "LUGGAGE": 4,
+        "REQUESTS": 100
+      },
+      "energyCapacityWh": 10000,
+      "currentEnergyWh": 9000,
+      "consumptionWhPerMeter": 0.15,
+      "skills": [],
+      "stops": [
+        {
+          "kind": "Depot",
+          "key": "tour-1_Start",
+          "location": {
+            "lat": 50.0,
+            "lon": 10.0
+          },
+          "serviceSeconds": 0,
+          "quantities": {},
+          "order": 1,
+          "arrival": "2030-01-07T06:00:00Z",
+          "serviceStart": "2030-01-07T06:00:00Z",
+          "departure": "2030-01-07T06:00:00Z",
+          "drivingSeconds": 0,
+          "distanceMeters": 0,
+          "consumedEnergy": 0,
+          "chargedEnergy": 0,
+          "remainingEnergy": 9000,
+          "vehicleScheduleId": "tour-1"
+        },
+        {
+          "kind": "Pickup",
+          "key": "y1_Pickup",
+          "location": {
+            "lat": 50.016188,
+            "lon": 10.011193
+          },
+          "timeWindow": {
+            "min": "2030-01-07T07:58:00Z",
+            "max": "2030-01-07T08:05:00Z",
+            "toleranceBefore": 0,
+            "toleranceAfter": 0,
+            "toleranceIsSet": false
+          },
+          "serviceSeconds": 60,
+          "quantities": {
+            "ADULTS": 3,
+            "CHILDS": 0,
+            "LUGGAGE": 0,
+            "REQUESTS": 1
+          },
+          "order": 2,
+          "arrival": "2030-01-07T06:05:08Z",
+          "serviceStart": "2030-01-07T07:58:00Z",
+          "departure": "2030-01-07T07:59:00Z",
+          "drivingSeconds": 308,
+          "distanceMeters": 2561,
+          "consumedEnergy": 384,
+          "chargedEnergy": 0,
+          "remainingEnergy": 8616,
+          "vehicleScheduleId": "tour-1"
+        },
+        {
+          "kind": "Dropoff",
+          "key": "y1_Dropoff",
+          "location": {
+            "lat": 50.053959,
+            "lon": 10.048968
+          },
+          "timeWindow": {
+            "min": "2030-01-07T08:00:00Z",
+            "max": "2030-01-07T08:50:00Z",
+            "toleranceBefore": 0,
+            "toleranceAfter": 0,
+            "toleranceIsSet": false
+          },
+          "serviceSeconds": 60,
+          "quantities": {
+            "ADULTS": 3,
+            "CHILDS": 0,
+            "LUGGAGE": 0,
+            "REQUESTS": 1
+          },
+          "order": 3,
+          "arrival": "2030-01-07T08:11:59Z",
+          "serviceStart": "2030-01-07T08:11:59Z",
+          "departure": "2030-01-07T08:12:59Z",
+          "drivingSeconds": 779,
+          "distanceMeters": 6489,
+          "consumedEnergy": 973,
+          "chargedEnergy": 0,
+          "remainingEnergy": 7643,
+          "vehicleScheduleId": "tour-1"
+        },
+        {
+          "kind": "Depot",
+          "key": "tour-1_End",
+          "location": {
+            "lat": 50.0,
+            "lon": 10.0
+          },
+          "serviceSeconds": 0,
+          "quantities": {},
+          "order": 4,
+          "arrival": "2030-01-07T08:31:03Z",
+          "serviceStart": "2030-01-07T08:31:03Z",
+          "departure": "2030-01-07T08:31:03Z",
+          "drivingSeconds": 1084,
+          "distanceMeters": 9029,
+          "consumedEnergy": 1354,
+          "chargedEnergy": 0,
+          "remainingEnergy": 6289,
+          "vehicleScheduleId": "tour-1"
+        }
+      ]
+    },
+    {
+      "vehicleId": "veh-2",
+      "tourId": "tour-2",
+      "shift": {
+        "min": "2030-01-07T06:00:00Z",
+        "max": "2030-01-07T22:00:00Z",
+        "toleranceBefore": 0,
+        "toleranceAfter": 0,
+        "toleranceIsSet": false
+      },
+      "capacity": {
+        "ADULTS": 4,
+        "CHILDS": 2,
+        "LUGGAGE": 4,
+        "REQUESTS": 100
+      },
+      "energyCapacityWh": 10000,
+      "currentEnergyWh": 9000,
+      "consumptionWhPerMeter": 0.15,
+      "skills": [],
+      "stops": [
+        {
+          "kind": "Depot",
+          "key": "tour-2_Start",
+          "location": {
+            "lat": 49.964027,
+            "lon": 10.027982
+          },
+          "serviceSeconds": 0,
+          "quantities": {},
+          "order": 1,
+          "arrival": "2030-01-07T06:00:00Z",
+          "serviceStart": "2030-01-07T06:00:00Z",
+          "departure": "2030-01-07T06:00:00Z",
+          "drivingSeconds": 0,
+          "distanceMeters": 0,
+          "consumedEnergy": 0,
+          "chargedEnergy": 0,
+          "remainingEnergy": 9000,
+          "vehicleScheduleId": "tour-2"
+        },
+        {
+          "kind": "Depot",
+          "key": "tour-2_End",
+          "location": {
+            "lat": 49.964027,
+            "lon": 10.027982
+          },
+          "serviceSeconds": 0,
+          "quantities": {},
+          "order": 2,
+          "arrival": "2030-01-07T06:00:00Z",
+          "serviceStart": "2030-01-07T06:00:00Z",
+          "departure": "2030-01-07T06:00:00Z",
+          "drivingSeconds": 0,
+          "distanceMeters": 0,
+          "consumedEnergy": 0,
+          "chargedEnergy": 0,
+          "remainingEnergy": 9000,
+          "vehicleScheduleId": "tour-2"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "key": "g2-02_Pickup",
+      "kind": "Pickup",
+      "location": {
+        "lat": 50.017986,
+        "lon": 10.013991
+      },
+      "timeWindow": {
+        "min": "2030-01-07T08:00:00Z",
+        "max": "2030-01-07T08:20:00Z",
+        "toleranceBefore": 0,
+        "toleranceAfter": 0,
+        "toleranceIsSet": false
+      },
+      "serviceSeconds": 60,
+      "quantities": {
+        "ADULTS": 2,
+        "CHILDS": 0,
+        "LUGGAGE": 0,
+        "REQUESTS": 1
+      },
+      "skills": []
+    },
+    {
+      "key": "g2-02_Dropoff",
+      "kind": "Dropoff",
+      "location": {
+        "lat": 50.044966,
+        "lon": 10.041973
+      },
+      "timeWindow": {
+        "min": "2030-01-07T08:00:00Z",
+        "max": "2030-01-07T09:30:00Z",
+        "toleranceBefore": 0,
+        "toleranceAfter": 0,
+        "toleranceIsSet": false
+      },
+      "serviceSeconds": 60,
+      "predecessors": [
+        "g2-02_Pickup"
+      ],
+      "quantities": {
+        "ADULTS": 2,
+        "CHILDS": 0,
+        "LUGGAGE": 0,
+        "REQUESTS": 1
+      },
+      "skills": []
+    }
+  ]
+}

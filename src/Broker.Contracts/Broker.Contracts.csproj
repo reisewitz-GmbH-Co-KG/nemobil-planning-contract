@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <!-- Die DTOs bilden eingehende NGSI-LD-Payloads ab; Pflichtfelder werden beim Deserialisieren gesetzt. -->
+    <NoWarn>$(NoWarn);CS8618</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Mediator.Abstractions" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Nemobil.Planning.Contracts\Nemobil.Planning.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

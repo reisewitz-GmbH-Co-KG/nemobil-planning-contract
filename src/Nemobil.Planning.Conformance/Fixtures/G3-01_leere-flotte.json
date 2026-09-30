@@ -1,0 +1,103 @@
+{
+  "id": "G3-01",
+  "name": "leere-flotte",
+  "group": "G3",
+  "description": "Der Flottenzustand enthaelt kein Fahrzeug: kein Vorschlag, Diagnosegrund gesetzt.",
+  "expectation": "NoProposal",
+  "request": {
+    "start": {
+      "lat": 50.017986,
+      "lon": 10.013991
+    },
+    "target": {
+      "lat": 50.044966,
+      "lon": 10.041973
+    },
+    "pickup": {
+      "min": "2030-01-07T08:00:00Z",
+      "max": "2030-01-07T08:20:00Z",
+      "toleranceBefore": 0,
+      "toleranceAfter": 0,
+      "toleranceIsSet": false
+    },
+    "dropoff": {
+      "min": "2030-01-07T08:00:00Z",
+      "max": "2030-01-07T09:00:00Z",
+      "toleranceBefore": 0,
+      "toleranceAfter": 0,
+      "toleranceIsSet": false
+    },
+    "demand": {
+      "adults": 1,
+      "children": 0,
+      "luggage": 0
+    },
+    "allowCarpooling": true,
+    "toleratedDelayBefore": "00:00:00",
+    "toleratedDelayAfter": "00:05:00",
+    "requiredSkills": [],
+    "schedule": {
+      "min": "2030-01-07T06:00:00Z",
+      "max": "2030-01-07T22:00:00Z",
+      "toleranceBefore": 0,
+      "toleranceAfter": 0,
+      "toleranceIsSet": false
+    },
+    "maxProposals": 3,
+    "maxSearchRadiusMeters": 30000,
+    "analyzeMode": false,
+    "correlationId": "g3-01"
+  },
+  "vehicles": [],
+  "items": [
+    {
+      "key": "g3-01_Pickup",
+      "kind": "Pickup",
+      "location": {
+        "lat": 50.017986,
+        "lon": 10.013991
+      },
+      "timeWindow": {
+        "min": "2030-01-07T08:00:00Z",
+        "max": "2030-01-07T08:20:00Z",
+        "toleranceBefore": 0,
+        "toleranceAfter": 0,
+        "toleranceIsSet": false
+      },
+      "serviceSeconds": 60,
+      "quantities": {
+        "ADULTS": 1,
+        "CHILDS": 0,
+        "LUGGAGE": 0,
+        "REQUESTS": 1
+      },
+      "skills": []
+    },
+    {
+      "key": "g3-01_Dropoff",
+      "kind": "Dropoff",
+      "location": {
+        "lat": 50.044966,
+        "lon": 10.041973
+      },
+      "timeWindow": {
+        "min": "2030-01-07T08:00:00Z",
+        "max": "2030-01-07T09:00:00Z",
+        "toleranceBefore": 0,
+        "toleranceAfter": 0,
+        "toleranceIsSet": false
+      },
+      "serviceSeconds": 60,
+      "predecessors": [
+        "g3-01_Pickup"
+      ],
+      "quantities": {
+        "ADULTS": 1,
+        "CHILDS": 0,
+        "LUGGAGE": 0,
+        "REQUESTS": 1
+      },
+      "skills": []
+    }
+  ]
+}
