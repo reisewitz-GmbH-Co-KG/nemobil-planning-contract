@@ -1,0 +1,63 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0001}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0002}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nemobil.Planning.Contracts", "src\Nemobil.Planning.Contracts\Nemobil.Planning.Contracts.csproj", "{7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0011}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nemobil.Planning.Reference", "src\Nemobil.Planning.Reference\Nemobil.Planning.Reference.csproj", "{7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0012}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nemobil.Planning.Conformance", "src\Nemobil.Planning.Conformance\Nemobil.Planning.Conformance.csproj", "{7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0013}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Broker.Contracts", "src\Broker.Contracts\Broker.Contracts.csproj", "{7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0014}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nemobil.Planning.Reference.Tests", "tests\Nemobil.Planning.Reference.Tests\Nemobil.Planning.Reference.Tests.csproj", "{7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0021}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Broker.Contracts.Tests", "tests\Broker.Contracts.Tests\Broker.Contracts.Tests.csproj", "{7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0022}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0011}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0011}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0011}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0011}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0012}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0012}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0012}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0012}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0013}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0013}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0013}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0013}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0014}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0014}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0014}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0014}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0021}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0021}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0021}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0021}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0022}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0022}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0022}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0022}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0011} = {7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0001}
+		{7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0012} = {7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0001}
+		{7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0013} = {7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0001}
+		{7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0014} = {7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0001}
+		{7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0021} = {7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0002}
+		{7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0022} = {7A1F0C3E-2B6D-4E8A-9C11-1F5B3A6D0002}
+	EndGlobalSection
+EndGlobal
